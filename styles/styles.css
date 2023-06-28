@@ -1,0 +1,42 @@
+/*reseteo css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*estilos personalizados logo*/
+/*estilos personalizados header*/
+.header{
+    font-family: 'Dosis', sans-serif;
+    background-color: #13131d;
+    color: #2596be;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+}
+.logo img {
+    display: flex;
+    max-width: 100%;
+    cursor:pointer;
+    transition: all 0.3s;
+    align-items: center;
+    margin-right: auto;
+}
+.logo img:hover {
+    transform: scale(1.2);
+}
+/*estilos personalizados header*/
+/* Cambio el color por default */
+.navbar-nav .nav-link {
+    color: #2596be; 
+}
+/* Cambia el color de fondo del navbar según tus preferencias */
+.navbar-nav {
+    background-color: #13131d; 
+}
+.btn-botonPersonalizado {
+    color: #2596be;
+    background-color: #2596be;
+}
