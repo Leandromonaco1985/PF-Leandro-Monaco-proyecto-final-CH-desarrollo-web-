@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <title>Leandro Monaco</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="icon" href="../img/favicon/favicon-16x16.ico" >
+        <link rel="stylesheet" href="../css/estilos.css">
+        <!--fuentes externas-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Libre+Franklin:wght@400;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="headerContancto" class="header">
+            <div class="logo">
+                <a href="../index.html" > <img src="../img/logo200.jpg" alt="logo" >
+            </div>
+            <nav class="nav__links">
+                <!--enlaces relativos-->
+                <ul>
+                    <li class="lista" ><a href="sobre mi.html" >SOBRE MI</a></li>
+                    <li class="lista"><a href="desarrollador.html">DESARROLLADOR</a></li>
+                    <li class="lista"><a href="musico.html">MUSICO</a></li>
+                    <li class="lista"><a href="electricista.html">ELECTRICISTA</a></li>
+                    <li class="lista"><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContacto">
+            <div class="containerTitulo"> <!--formulario de contacto-->
+                <h1> contacto </h1> 
+                <h2> comuniquese conmigo</h2>
+            </div>
+            <div class="containerFormulario">
+                <form class="formularioContacto">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name= "Nombre">
+                    </div>
+                    <div>
+                        <label for="mensaje"> Mensaje </label> 
+                        <textarea name="mensaje" cols="15" rows="15" placeholder="envienos su mensaje"></textarea>
+                    </div>
+                    <div>
+                        <label for="direccion de correo"> Direccion de correo</label>
+                        <input type="email" name="direccion de correo" placeholder="(requerido)" required>
+                    </div> 
+                    <div>
+                        <label for="tel"> Tel </label>
+                        <input type= "number" name="tel" placeholder="(requerido)" required> 
+                    </div>    
+                    <div>
+                        <button type="submit" value="enviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer"><!--pie de página-->
+            <div class="copy">
+                <h6> Desarrollado por Leandro Mónaco 2023</h6>  
+            </div>
+            <div class="iconosRedes"> <!--enlaces externos-->
+                <a href="https://www.facebook.com/leandro.monaco.142/" target="_blank">
+                    <img src="/img/logofb.png" alt="logo facebook">
+                </a>
+                <a href="https://wa.me/5491151565262" target="_blank">
+                    <img src="/img/whapp.jpg" alt="logo whatsapp" >
+                </a>
+                    <img src="/img/linkedin.png" alt="linkedin"> <!--no tengo perfil de linkedin por el momento :p-->
+            </div>
+            <div > <!--enlace interno-->
+                <button class="botonSubir"> <a href="#headerContancto"> Subir </a> </button>
+            </div> 
+        </footer>
+    </body>
+</html>

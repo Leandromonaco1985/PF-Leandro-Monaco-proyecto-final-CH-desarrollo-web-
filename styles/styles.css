@@ -42,13 +42,12 @@
 }
 .navbar-nav .nav-link:hover {
     display: flex;
-    justify-content: flex-end;
     color: rgb(177, 168, 168);
     transform: scale(1);
 }
 /*estilos main */
 main{
-    background: linear-gradient(rgb(182, 233, 253), #13131d);
+    background: linear-gradient(rgb(182, 233, 253), #2596be);
     color: rgb(31, 31, 100);
     font-family: 'Dosis', sans-serif;    
 }
@@ -72,7 +71,10 @@ main{
 }
 .h4_index {
     font-size: 30px;
-    color: rgb(168, 13, 13);
+    color:#7c1919;
+}
+.h4_index span{
+    color: beige;
 }
 .cajaImg {
     grid-area: cajaImg;
@@ -170,6 +172,10 @@ flex-direction: column;
     justify-content: center;
     }
 }
+/*Estilos pagina Sobre Mi*/
+.mainSobreMi{
+    padding: 20px;
+}
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 577px) {
     .footer {
@@ -177,6 +183,6 @@ flex-direction: column;
         justify-content: space-between;
     }
     .footer div {
-     flex-basis: auto;
+        flex-basis: auto;
     }
 }
