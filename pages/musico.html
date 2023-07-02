@@ -1,78 +1,103 @@
 <!DOCTYPE html>
-<html lang = "es">
-    <head>
-        <title>Leandro Monaco - Currilum Vitae </title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Leandro Monaco - Currilum Vitae</title>
-        <link rel="icon" href="../img/favicon/favicon-16x16.ico" >
-        <link rel="stylesheet" href="../css/estilos.css">
-        <!--fuentes externas-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV OnLine Leandro Monaco</title>
+    <!--estilos-->
+    <!--favicon-->
+    <link rel="icon" href="img/favicon2/favicon-16x16.png" >
+    <!--link boostrap, quiero su menu hamburguesa-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!--link mi estilo-->
+    <link rel="stylesheet" href="/styles/styles.css">
+    <!--fuentes externas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;800&family=Libre+Franklin:wght@400;800&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header id="headermusico" class="header">
+</head>
+<body>
+    <!--encabezado - navbar de boostrap-->
+  <header id= "headerMusico" class="header">
+    <nav class="navbar navbar-expand-lg" style="font-family: 'Dosis', sans-serif; background-color: #13131d;
+        color: #2596be;
+        justify-content: flex-end;
+        align-items: center;">
+        <div class="container-fluid">
             <div class="logo">
-                <a href="../index.html" > <img src="../img/logo200.jpg" alt="logo" >
+                <a href="../index.htm" > <img src="/img/logo200.jpg" alt="logo" ></a>
             </div>
-            <nav class="nav__links">
-                <!--enlaces relativos-->
-                <ul>
-                    <li class="lista" ><a href="sobre mi.html" >SOBRE MI</a></li>
-                    <li class="lista"><a href="desarrollador.html">DESARROLLADOR</a></li>
-                    <li class="lista"><a href="musico.html">MUSICO</a></li>
-                    <li class="lista"><a href="electricista.html">ELECTRICISTA</a></li>
-                    <li class="lista"><a href="contacto.html">CONTACTO</a></li>
+            <button class="navbar-toggler btn-botonPersonalizado" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #2596be;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end; margin-right: 30px;" >
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="sobre mi.html">SOBRE MI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="desarrollador.html">DESARROLLADOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="musico.html">MUSICO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="electricista.html">ELECTRICISTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
-            </nav>
-         </header>
-        <main class="mainMusico">
-            <div class="cajaH1">
-                <h1>Musico</h1>
             </div>
-            <section >
-                <article class="formacion__musico">
-                    <h2>Formación</h2>
-                    <p>
-                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos obcaecati, rerum earum iure modi nihil voluptatibus odio doloremque velit, aspernatur numquam. Sed, modi ea tenetur excepturi magni animi earum numquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima nesciunt numquam harum laborum et qui architecto eius eveniet placeat aut. Est, assumenda cum! Nesciunt, hic aspernatur? Ipsum quia sed fugit?
-                    </p>
-                </article>
-                <article class="proyectos__musico">
-                    <h2> Proyectos</h2>
-                    <div>
-                        <h3> San Osvaldo Orquesta</h3>
-                        <p> San Osvaldo Orquesta es una agrupación tanguera que recrea las interpretaciones del maestro  Osvaldo Pugliese con el propósito de rescatar ese sonido tan característico que supo desarrollar. Dentro de la orquesta tipica, integrada por doce músicos, ocupo el lugar de contrabajista.</p> 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UJqnGtnWbAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    <div>
-                        <h3> Sismico</h3>
-                        <p> Creado en octubre del 2015 "Sísmico Tango", es un proyecto basado en composiciones propias.  En el 2016 realiza su primera gira por España, Suiza y Alemania. En el 2017 lanza su primer disco titulado "Todas las mañanas del mundo" integrado por nueve tangos instrumentales. "Sísmico Tango" a su vez es parte de "Movimiento Sísmico Popular" una plataforma artística integrada por varias disciplinas como la danza, el teatro, las artes plásticas, las artes visuales y la literatura.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/007IsHZ0KJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
-                    </div>
-                </article>
-            </section>
-           
-        </main>    
-        <footer class="footer"><!--pie de página-->
-            <div class="copy">
-                <h6> Desarrollado por Leandro Mónaco 2023</h6>  
-            </div>
-            <div class="iconosRedes"> <!--enlaces externos-->
-                <a href="https://www.facebook.com/leandro.monaco.142/" target="_blank">
-                    <img src="/img/logofb.png" alt="logo facebook">
-                </a>
-                <a href="https://wa.me/5491151565262" target="_blank">
-                    <img src="/img/whapp.jpg" alt="logo whatsapp" >
-                </a>
-                    <img src="/img/linkedin.png" alt="linkedin"> <!--no tengo perfil de linkedin por el momento :p-->
-            </div>
-            <div > <!--enlace interno-->
-                <button class="botonSubir"> <a href="#headermusico"> Subir </a> </button>
-            </div> 
-        </footer>
-        </main>
-    </body>
+        </div>
+    </nav>
+</header>
+<main class="mainMusico">
+    <h1 class="titulo">Musico</h1>
+        <div class="grilla1"> <h3> Formacion</h3>
+    </div>
+    <div class="grilla2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sint nisi beatae distinctio placeat quasi ratione obcaecati omnis incidunt eligendi, repudiandae, unde provident? Molestias, quidem illum officia dolor in expedita.</p>
+    </div>
+    <section class="grilla3">
+        <h3> San Osvaldo Orquesta</h3>
+        <p> San Osvaldo Orquesta es una agrupación tanguera que recrea las interpretaciones del maestro  Osvaldo Pugliese con el propósito de rescatar ese sonido tan característico que supo desarrollar. Dentro de la orquesta tipica, integrada por doce músicos, ocupo el lugar de contrabajista.</p> 
+    </section>
+    <section class="grilla4">
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/UJqnGtnWbAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <section class="grilla5">
+        <h3> Sismico</h3>
+        <p> Creado en octubre del 2015 "Sísmico Tango", es un proyecto basado en composiciones propias.  En el 2016 realiza su primera gira por España, Suiza y Alemania. En el 2017 lanza su primer disco titulado "Todas las mañanas del mundo" integrado por nueve tangos instrumentales. "Sísmico Tango" a su vez es parte de "Movimiento Sísmico Popular" una plataforma artística integrada por varias disciplinas como la danza, el teatro, las artes plásticas, las artes visuales y la literatura.</p>
+    </section>
+    <section class="grilla6">
+        <iframe width="350" height="250" src="https://www.youtube.com/embed/007IsHZ0KJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>"
+    </section>
+</main>
+<!--script para boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>       
+<footer class="footer">
+    <div class="copy">
+        <h7> Desarrollado por Leandro Mónaco 2023</h7>  
+    </div>
+    <!--enlaces externos-->
+    <div class="iconosRedes"> 
+        <a href="https://www.facebook.com/leandro.monaco.142/" target="_blank">
+            <img src="/img/logofb.png" alt="logo facebook">
+        </a>
+        <a href="https://wa.me/5491151565262" target="_blank">
+            <img src="/img/whapp.jpg" alt="logo whatsapp" >
+        </a>
+        <a href="https://ar.linkedin.com/" target="_blank">
+            <img src="/img/linkedin.png" alt="linkedin">
+        </a> <!--no tengo perfil de linkedin por el momento :p-->
+    </div>
+    <!--enlace interno-->
+    <div > 
+        <button class="botonSubir"> <a href="#headerMusico"> Subir </a> </button>
+    </div> 
+</footer>
+    
+</body>
 </html>

@@ -54,11 +54,12 @@ main{
 /*estilos main index*/
 .mainIndex{
     display: grid;
-    grid-template-columns: 2fr, 3fr;
-    grid-template-rows: 2fr, 3fr;
+    grid-template-columns:2fr 3fr;
+    grid-template-rows:2fr 3fr;
     grid-template-areas: 
     "cajaImg cajaTextos"
     "cajaImg cajaTextos";
+    height: 100vh;
     padding: 2rem;
     gap: 5rem;
     justify-content: center;
@@ -175,6 +176,186 @@ flex-direction: column;
 /*Estilos pagina Sobre Mi*/
 .mainSobreMi{
     padding: 20px;
+    height: 100vh;
+}
+/*estilos pagina desarrollador*/
+.mainDesarrollador{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;    
+    height: 100vh;
+}
+.contendorMainDesarrollador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cajaH1Desarrolador{
+    align-items: flex-start;
+
+}
+/*estilos cards*/
+.card{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    padding: 0px;
+    margin: 35px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 5px 1.5px 15px  rgb(20, 20, 19);
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #2596be;
+    background-color: #13131d;
+    text-align: center;
+    z-index: 1;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.card .back{
+  transform: perspective(600px)rotateY(180deg);
+  padding: 15px;
+  color:#2182a8;
+  background-color: #13131d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 0.5px 10px  rgb(218, 231, 27);
+}
+.card .back h3{
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.card .back p{
+  margin-bottom: 45px;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+.card:hover .front{
+transform: perspective(600px) rotateY(180deg);}
+.card:hover .back{
+transform: perspective(600px) rotateY(360deg);
+}
+.mainMusico{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "grilla1 grilla2"
+    "grilla3 grilla4"
+    "grilla5 grilla6";
+    gap: 35px;
+    padding: 40px;
+
+}
+
+.titulo{
+    grid-area: titulo;
+    align-items: center;
+    justify-content: center;
+}
+.titulo h1{
+    font-size: xx-large;
+    font-weight: bolder ;
+    margin-bottom: 20px;
+}
+.grilla1{
+    grid-area: grilla1;
+    align-items: center;
+    justify-content: center;
+}
+.grilla2{
+    grid-area: grilla2;
+    align-items: center;
+    justify-content: center;
+}
+.grilla3{
+    grid-area: grilla3;
+    align-items: center;
+    justify-content: center;
+}
+.grilla4{
+    grid-area: grilla4;
+    align-items: center;
+    justify-content: center;
+}
+.grilla5{
+    grid-area: grilla5;
+    align-items: center;
+    justify-content: center;
+}
+.grilla6{
+    grid-area: grilla6;
+    align-items: center;
+    justify-content: center;
+}
+/*estilos pagina contacto*/
+.mainContacto{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formularioContacto{
+    max-width: 70vh;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.containerTitulo{
+    align-self: flex-start;
+    padding: 2em;
+    margin-left: 0;
+}
+.containerTitulo h1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.botonForm{
+    padding: 5px 10px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    border-radius: 50px;
+    background-color: rgb(243, 224, 52);
+    margin: 10px;
+    cursor: pointer;
+    align-self: center;
+}
+/*media queri pagina musico*/
+@media (max-width: 577px){
+    .mainMusico{
+        display: flex;
+        flex-direction: column;
+    }
 }
 /* Estilos para dispositivos de escritorio */
 @media (min-width: 577px) {
