@@ -60,27 +60,38 @@ main{
     "cajaImg cajaTextos"
     "cajaImg cajaTextos";
     height: 100vh;
-    padding: 2rem;
-    gap: 5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;  
 }
 .h1_index {
-    font-size: 80px;
-    justify-content: center;
+    font-size: 8em;
+    justify-content:flex-start;
     align-items: center;
 }
 .h4_index {
     font-size: 30px;
-    color:#7c1919;
-}
-.h4_index span{
-    color: beige;
+    color:cornsilk;
 }
 .cajaImg {
     grid-area: cajaImg;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.cajaImg img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#img_index{
+    max-width: 100%;
+    object-fit: contain;
+    /* height: 10px; */
 }
 .cajaTextos{
     grid-area: cajaTextos;
@@ -143,66 +154,49 @@ main{
     color: #2f6175;
     text-decoration: none;
 }
-/* Estilos para dispositivos móviles */
-@media (max-width: 576px) {
-main {
-display: flex;
-flex-direction: column;
-}
-.mainIndex {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "cajaTextos"
-    "cajaImg";
-    gap: 2rem;
-    padding: 1rem;
-    text-align: center;
-}
-.footer {
-    flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    background-color: rgb(19, 19, 29);
-    color: rgb(37, 150, 190);
-}
-.copy {
-    justify-content: center;
-}
-.iconosRedes {
-    justify-content: center;
-    }
-}
 /*Estilos pagina Sobre Mi*/
 .mainSobreMi{
     padding: 20px;
     height: 100vh;
 }
 /*estilos pagina desarrollador*/
+/*posicionamiento elementos*/
 .mainDesarrollador{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 15px;    
-    height: 100vh;
-}
-.contendorMainDesarrollador{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100px 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    ". card1 card2 card3";
+    padding: auto;
 }
 .cajaH1Desarrolador{
-    align-items: flex-start;
-
+    grid-area: titulo;
+    justify-content: center;
+    padding: 2em;
+    margin-top: 2em;
 }
-/*estilos cards*/
+.card1{
+    grid-area: card1;
+    margin-top: 6em;
+}
+.card2{
+    grid-area: card2;
+    margin-top: 6em;
+}
+.card3{
+    grid-area: card3;
+    margin-top: 6em;
+}
+/*estilos elementos pagina desarrollador*/
 .card{
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
     padding: 0px;
-    margin: 35px;
+    margin: 15px;
+    background-color:transparent
 }
 .card .face{
     position: absolute;
@@ -221,7 +215,7 @@ flex-direction: column;
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:fill;
 }
 .card .front h3{
     position: absolute;
@@ -236,31 +230,32 @@ flex-direction: column;
     letter-spacing: 2px;
 }
 .card .back{
-  transform: perspective(600px)rotateY(180deg);
-  padding: 15px;
-  color:#2182a8;
-  background-color: #13131d;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  box-shadow: 0px 0.5px 10px  rgb(218, 231, 27);
+    transform: perspective(600px)rotateY(180deg);
+    padding: 15px;
+    color:#2182a8;
+    background-color: #13131d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 0.5px 10px  rgb(218, 231, 27);
 }
 .card .back h3{
-  font-size: 30px;
-  margin-top: 20px;
-  letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
 }
 .card .back p{
-  margin-bottom: 45px;
-  justify-content: center;
-  letter-spacing: 1px;
+    margin-bottom: 45px;
+    justify-content: center;
+    letter-spacing: 1px;
 }
 .card:hover .front{
 transform: perspective(600px) rotateY(180deg);}
 .card:hover .back{
 transform: perspective(600px) rotateY(360deg);
 }
+/*estilos pagina musico*/
 .mainMusico{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -272,9 +267,7 @@ transform: perspective(600px) rotateY(360deg);
     "grilla5 grilla6";
     gap: 35px;
     padding: 40px;
-
 }
-
 .titulo{
     grid-area: titulo;
     align-items: center;
@@ -315,6 +308,45 @@ transform: perspective(600px) rotateY(360deg);
     align-items: center;
     justify-content: center;
 }
+/*estilo página electricista*/
+.mainElectricista{
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: flex-start;
+    font-size: larger;
+}
+    .sectionElectricista{
+        justify-content: center;
+        text-align: center;
+        margin: 15px;
+        padding: 15px;
+    }
+    .sectionElectricista h2{
+        padding: 15px;
+        text-decoration: solid;
+    }
+.iconosClientesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.iconosClientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.iconosClientes img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        max-width: 100%;
+    } 
 /*estilos pagina contacto*/
 .mainContacto{
     display: flex;
@@ -338,6 +370,10 @@ transform: perspective(600px) rotateY(360deg);
     font-size: xx-large;
     font-weight: bolder;
 }
+.titulo_h1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
 .botonForm{
     padding: 5px 10px;
@@ -350,11 +386,51 @@ transform: perspective(600px) rotateY(360deg);
     cursor: pointer;
     align-self: center;
 }
-/*media queri pagina musico*/
+
+/*media queries*/
+
 @media (max-width: 577px){
     .mainMusico{
         display: flex;
         flex-direction: column;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgb(19, 19, 29);
+        color: rgb(37, 150, 190);
+    }
+    .copy {
+        justify-content: center;
+    }
+    .iconosRedes {
+        justify-content: center;
+        }
+}
+@media (max-width: 885px){
+    .mainDesarrollador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainIndex {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "cajaTextos"
+        "cajaImg";
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
     }
 }
 /* Estilos para dispositivos de escritorio */
