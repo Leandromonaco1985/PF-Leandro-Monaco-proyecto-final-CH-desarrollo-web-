@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(19, 19, 29);
+    color: rgb(37, 150, 190);
+    padding: 20px;
+    font-size: 15px;
+    img{
+        box-sizing: border-box;
+        width: 60px;
+        height: 60px; 
+        border-radius: 50%;
+        padding: 15px;
+    }
+    div {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        .copy {
+            font-size: small;
+            text-align: center; 
+        }
+        .iconosRedes {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            flex-basis: 100%;
+                & a{
+                    text-decoration: none;
+                    align-items: center;
+                }
+        }
+        .botonSubir {
+            padding: 5px 10px;
+            font-size: medium;
+            font-weight: bold;
+            font-family: 'Dosis', sans-serif;
+            border-radius: 50px;
+            background-color: rgb(243, 224, 52);
+            margin: 10px;
+            cursor: pointer;
+            align-self: center;
+            & a {
+                color: #2f6175;
+                text-decoration: none;
+            }
+        }
+    }
+}

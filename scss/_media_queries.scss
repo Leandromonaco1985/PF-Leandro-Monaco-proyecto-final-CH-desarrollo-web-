@@ -1,0 +1,79 @@
+@media (max-width: 577px){
+    .mainMusico{
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    }
+    .mainSobreMi{
+        .cajaDiv2{
+            font-size: 1em;
+            height: auto;
+        }
+    }
+    }
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgb(19, 19, 29);
+        color: rgb(37, 150, 190);
+    }
+    .copy {
+        justify-content: center;
+    }
+    .iconosRedes {
+        justify-content: center;
+        }
+@media (max-width: 885px){
+    .header{
+        .navbar-nav{
+            justify-content: flex-start;
+            .nav-link{
+                &focus{
+                    outline: none;
+                    justify-content: flex-start;
+                }
+            }
+                }
+    }
+    
+
+    .mainDesarrollador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainIndex {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "cajaTextos"
+        "cajaImg";
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+        .h1_index{
+            font-size: 3em;
+        }
+    }
+}
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 577px) {
+    .footer {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .footer div {
+        flex-basis: auto;
+    }
+    .mainSobreMi {
+        height: calc(100vh - 100px); /* Ajusta la altura según tus necesidades */
+        overflow-y: auto; /* Añade scroll si es necesario */
+    }
+}

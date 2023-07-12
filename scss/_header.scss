@@ -1,0 +1,44 @@
+.header{
+    /*logo*/
+    .logo{
+        width: 150px;
+        img {
+            display: flex;
+            max-width: 100%;
+            cursor:pointer;
+            transition: all 0.3s;
+            align-items: center;
+            margin-right: auto;
+        }
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    /*navbar*/
+    .navbar-nav{
+        .nav-link {
+            color: #2596be;
+            justify-content: flex-end;
+            align-items: right;
+            list-style: none; 
+            &:hover {
+                display: flex;
+                color: rgb(177, 168, 168);
+                transform: scale(1);
+            }
+            &:focus {
+                outline: none; /* Evita el desplazamiento hacia la derecha al hacer clic */
+              }
+        }
+        .navbar-customizado{
+            display: flex;
+            background-color: #13131d; 
+            justify-content: right;
+            align-items: flex-end;
+        }
+        .btn-botonPersonalizado{
+            color: #2596be;
+            background-color: #2596be;
+        }
+    }
+}

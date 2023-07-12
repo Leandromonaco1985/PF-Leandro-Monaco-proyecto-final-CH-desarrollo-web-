@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/*reseteo css*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*variables*/
+/*estilos personalizados header*/
+.header {
+  /*logo*/
+  /*navbar*/
+}
+.header .logo {
+  width: 150px;
+}
+.header .logo img {
+  display: flex;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-items: center;
+  margin-right: auto;
+}
+.header .logo:hover {
+  transform: scale(1.2);
+}
+.header .navbar-nav .nav-link {
+  color: #2596be;
+  justify-content: flex-end;
+  align-items: right;
+  list-style: none;
+}
+.header .navbar-nav .nav-link:hover {
+  display: flex;
+  color: rgb(177, 168, 168);
+  transform: scale(1);
+}
+.header .navbar-nav .nav-link:focus {
+  outline: none; /* Evita el desplazamiento hacia la derecha al hacer clic */
+}
+.header .navbar-nav .navbar-customizado {
+  display: flex;
+  background-color: #13131d;
+  justify-content: right;
+  align-items: flex-end;
+}
+.header .navbar-nav .btn-botonPersonalizado {
+  color: #2596be;
+  background-color: #2596be;
+}
+
+main {
+  /* Estilos generales para main */
+  background: linear-gradient(#13131d, #2596be);
+  color: #2596be;
+  font-family: "Dosis", sans-serif;
+}
+main .titulo_h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 25px;
+  color: #2596be;
+}
+
+/*estilos main index*/
+.mainIndex {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 3fr;
+  grid-template-areas: "cajaImg cajaTextos" "cajaImg cajaTextos";
+  height: 100vh;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+.mainIndex .h1_index {
+  font-size: 8em;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mainIndex .h4_index {
+  font-size: 30px;
+  color: #fff8dc;
+}
+.mainIndex .cajaImg {
+  grid-area: cajaImg;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mainIndex .cajaImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.mainIndex #img_index {
+  max-width: 100%;
+  object-fit: contain;
+  /* height: 10px; */
+}
+.mainIndex .cajaTextos {
+  grid-area: cajaTextos;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos pagina Sobre Mi*/
+.mainSobreMi {
+  padding: 35px;
+  color: #fff8dc;
+}
+
+/*estilos pagina desarrollador*/
+.mainDesarrollador {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 100px 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "titulo titulo titulo titulo" ". card1 card2 card3";
+  padding: auto;
+  /*clases para grid area cards*/
+}
+.mainDesarrollador .card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  padding: 0px;
+  margin: 15px;
+  background-color: transparent;
+}
+.mainDesarrollador .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.mainDesarrollador .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.mainDesarrollador .card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.mainDesarrollador .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 5px 1.5px 15px rgb(20, 20, 19);
+}
+.mainDesarrollador .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mainDesarrollador .card .front h3 {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #2596be;
+  background-color: #13131d;
+  text-align: center;
+  z-index: 1;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.mainDesarrollador .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  padding: 15px;
+  color: #2182a8;
+  background-color: #13131d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 0.5px 10px rgb(218, 231, 27);
+}
+.mainDesarrollador .card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.mainDesarrollador .card1 {
+  grid-area: card1;
+  margin-top: 6em;
+}
+.mainDesarrollador .card2 {
+  grid-area: card2;
+  margin-top: 6em;
+}
+.mainDesarrollador .card3 {
+  grid-area: card3;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+/*estilos elementos pagina desarrollador*/
+/*estilos pagina musico*/
+.mainMusico {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-areas: "titulo titulo" "grilla1 grilla2" "grilla3 grilla4" "grilla5 grilla6";
+  gap: 35px;
+  padding: 40px;
+}
+.mainMusico .titulo {
+  grid-area: titulo;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .titulo h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.mainMusico .grilla1 {
+  grid-area: grilla1;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .grilla2 {
+  grid-area: grilla2;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .grilla3 {
+  grid-area: grilla3;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .grilla4 {
+  grid-area: grilla4;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .grilla5 {
+  grid-area: grilla5;
+  align-items: center;
+  justify-content: center;
+}
+.mainMusico .grilla6 {
+  grid-area: grilla6;
+  align-items: center;
+  justify-content: center;
+}
+
+/*estilo página electricista*/
+.mainElectricista {
+  display: flex;
+  height: max-content;
+  flex-direction: column;
+  padding: 25px;
+  justify-content: flex-start;
+  font-size: larger;
+}
+
+.sectionElectricista {
+  justify-content: center;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+}
+
+.sectionElectricista h2 {
+  padding: 15px;
+  text-decoration: solid;
+}
+
+.iconosClientesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.iconosClientes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.iconosClientes img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  max-width: 100%;
+}
+
+/*estilos pagina contacto*/
+.mainContacto {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainContacto .containerTitulo {
+  align-self: flex-start;
+  padding: 2em;
+  margin-left: 0;
+}
+.mainContacto .formularioContacto {
+  max-width: 70vh;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.mainContacto .formularioContacto .botonForm {
+  padding: 5px 10px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  border-radius: 50px;
+  background-color: rgb(243, 224, 52);
+  margin: 10px;
+  cursor: pointer;
+  align-self: center;
+}
+
+/*media queries*/
+@media (max-width: 577px) {
+  .mainMusico {
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSobreMi .cajaDiv2 {
+    font-size: 1em;
+    height: auto;
+  }
+}
+.footer {
+  flex-direction: column;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgb(19, 19, 29);
+  color: rgb(37, 150, 190);
+}
+
+.copy {
+  justify-content: center;
+}
+
+.iconosRedes {
+  justify-content: center;
+}
+
+@media (max-width: 885px) {
+  .header .navbar-nav {
+    justify-content: flex-start;
+  }
+  .header .navbar-nav .nav-linkfocus {
+    outline: none;
+    justify-content: flex-start;
+  }
+  .mainDesarrollador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainIndex {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "cajaTextos" "cajaImg";
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .mainIndex .h1_index {
+    font-size: 3em;
+  }
+}
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 577px) {
+  .footer {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .footer div {
+    flex-basis: auto;
+  }
+  .mainSobreMi {
+    height: calc(100vh - 100px); /* Ajusta la altura según tus necesidades */
+    overflow-y: auto; /* Añade scroll si es necesario */
+  }
+}
+/*estilo footer*/
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(19, 19, 29);
+  color: rgb(37, 150, 190);
+  padding: 20px;
+  font-size: 15px;
+}
+.footer img {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 15px;
+}
+.footer div {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer div .copy {
+  font-size: small;
+  text-align: center;
+}
+.footer div .iconosRedes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-basis: 100%;
+}
+.footer div .iconosRedes a {
+  text-decoration: none;
+  align-items: center;
+}
+.footer div .botonSubir {
+  padding: 5px 10px;
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  border-radius: 50px;
+  background-color: rgb(243, 224, 52);
+  margin: 10px;
+  cursor: pointer;
+  align-self: center;
+}
+.footer div .botonSubir a {
+  color: #2f6175;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
