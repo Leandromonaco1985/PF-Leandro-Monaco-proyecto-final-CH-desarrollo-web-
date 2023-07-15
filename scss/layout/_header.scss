@@ -1,0 +1,39 @@
+.header{
+    /*estilos personalizados header*/
+    .navbar-expand-lg{
+        font-family: 'Dosis', sans-serif;
+        background-color: $color-primario-oscuro;
+        justify-content: flex-end;
+        align-items: center;
+        .container-fluid{
+            .logo{
+                width: 150px;
+                img {
+                    display: flex;
+                    max-width: 100%;
+                    cursor:pointer;
+                    transition: all 0.3s;
+                    margin-right: auto;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+            .btn-botonPersonalizado{
+                color: $color-primario-claro;
+                background-color: $color-primario-claro;
+            }
+            .navbar-nav {
+                .nav-link {
+                    color: $color-primario-claro;
+                    align-items: right;
+                    list-style: none;
+                    &:hover {
+                        color: $color-hover-nav;
+                        transform: scale(1);
+                    }     
+                }
+            }        
+        }
+    }
+}

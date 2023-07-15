@@ -1,0 +1,40 @@
+.mainContacto{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .containerTitulo{
+        align-self: flex-start;
+        padding: 2em;
+        margin-left: 0;
+    }
+    .formularioContacto{
+        display: flex;
+        flex-direction: column;
+        max-width: 70vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1em;
+        color: $color-textos;
+
+        .contendorButton{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            .botonForm{
+                padding: 5px 10px;
+                font-size: medium;
+                font-weight: bold;
+                font-family: 'Dosis', sans-serif;
+                border-radius: 50px;
+                background-color: rgb(243, 224, 52);
+                margin: 10px;
+                cursor: pointer;
+                align-self: center;
+            }      
+        }
+        
+    }
+}

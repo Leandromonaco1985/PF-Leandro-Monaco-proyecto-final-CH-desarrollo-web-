@@ -1,0 +1,19 @@
+@mixin estilo_h1(){
+    color: $color-primario-claro;
+    font-size: 3.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}  
+@mixin estilo_textos{
+    color: $color-textos;
+    font-family: "Dosis", sans-serif;
+    font-size: 1em;
+}
+@mixin estilos_h3{
+    color: $color-fuente-main;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+    padding-left: 30px;
+}

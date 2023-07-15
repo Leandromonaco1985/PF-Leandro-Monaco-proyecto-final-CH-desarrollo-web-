@@ -1,0 +1,15 @@
+implementar:
+
+XX modular partials XX
+variables
+mixings
+
+cambios:
+- color y tipografias para textos
+- eliminar lorems
+- elegir y adecuar imagenes
+- favicon?
+- hover hambuerguesa
+- footer en desktop
+- centrar titulo en movil para todas las paginas (solo está ok en desarrollador)
+- pagina de contacto: centrar boton enviar con el formulario.

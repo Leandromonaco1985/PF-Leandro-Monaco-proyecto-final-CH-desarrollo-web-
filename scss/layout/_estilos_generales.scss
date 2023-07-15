@@ -1,0 +1,17 @@
+main{
+    /* Estilos generales para main */
+    background: linear-gradient($color-primario-oscuro, $color-primario-claro);
+    color: $color-primario-claro;
+    font-family: 'Dosis', sans-serif;
+    
+    /*estilos para h1*/
+    .titulo_h1{
+        @include estilo_h1;
+    }
+    p{
+        @include estilo_textos;
+    }
+    .estilos_h3{
+        @include estilos_h3;
+    }
+}

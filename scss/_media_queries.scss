@@ -1,46 +1,46 @@
+/*medias para moviles*/
 @media (max-width: 577px){
-    .mainMusico{
-        display: flex;
-        flex-direction: column;
-    }
+    
     main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     }
     .mainSobreMi{
+        text-align: center;
         .cajaDiv2{
-            font-size: 1em;
             height: auto;
         }
     }
-    }
-    .footer {
+    .mainContacto{
+        display: flex;
         flex-direction: column;
-        padding: 1rem;
-        text-align: center;
-        background-color: rgb(19, 19, 29);
-        color: rgb(37, 150, 190);
     }
-    .copy {
-        justify-content: center;
     }
-    .iconosRedes {
-        justify-content: center;
-        }
+/*medias para tablets*/
 @media (max-width: 885px){
+    .mainMusico{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mainContacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainSobreMi{
+        text-align: center;
+        .cajaDiv2{
+            height: auto;
+        }
+    }
     .header{
         .navbar-nav{
             justify-content: flex-start;
-            .nav-link{
-                &focus{
-                    outline: none;
-                    justify-content: flex-start;
-                }
             }
-                }
     }
-    
-
     .mainDesarrollador{
         display: flex;
         flex-direction: column;
@@ -62,8 +62,21 @@
             font-size: 3em;
         }
     }
+    .footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgb(19, 19, 29);
+        color: rgb(37, 150, 190);
+        .copy {
+            justify-content: center;
+        }
+        .iconosRedes {
+            justify-content: center;
+            }
+    }
 }
-/* Estilos para dispositivos de escritorio */
+/* dispositivos de escritorio */
 @media (min-width: 577px) {
     .footer {
         flex-wrap: nowrap;
@@ -73,7 +86,7 @@
         flex-basis: auto;
     }
     .mainSobreMi {
-        height: calc(100vh - 100px); /* Ajusta la altura según tus necesidades */
-        overflow-y: auto; /* Añade scroll si es necesario */
+        height: calc(100vh - 100px); 
+        overflow-y: auto; 
     }
 }

@@ -1,0 +1,75 @@
+.mainMusico{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "grilla1 grilla2"
+    "grilla3 grilla4"
+    "grilla5 grilla6";
+    gap: 35px;
+    padding: 40px;
+    .titulo{
+        grid-area: titulo;
+        align-items: center;
+        justify-content: center;
+    }
+    .titulo h1{
+        font-size: xx-large;
+        font-weight: bolder ;
+        margin-bottom: 20px;
+    }
+    .grilla1{
+        grid-area: grilla1;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .grilla2{
+        grid-area: grilla2;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .grilla3{
+        grid-area: grilla3;
+        align-items: center;
+        justify-content: center;
+    }
+    .grilla4{
+        grid-area: grilla4;
+        align-items: center;
+        justify-content: center;
+    }
+    .grilla5{
+        grid-area: grilla5;
+        align-items: center;
+        justify-content: center;
+    }
+    .grilla6{
+        grid-area: grilla6;
+        align-items: center;
+        justify-content: center;
+    }
+    /*condicional para ajustar tamaño de iframes según dispositivo*/
+    $iframe-width: 300px; // Tamaño predeterminado del iframe
+
+@function calculateIframeWidth($width) {
+  @if $width < 768px {
+    @return 350px;
+  } @else if $width < 1024px {
+    @return 700px;
+  } @else if $width < 1440px {
+    @return 800px;
+  } @else {
+    @return 1000px;
+  }
+}
+
+section.grilla4 iframe,
+section.grilla6 iframe {
+  width: calculateIframeWidth($iframe-width);
+  height: calc(9 / 16 * calculateIframeWidth($iframe-width)); // Establecer una relación de aspecto 16:9
+}
+
+}
