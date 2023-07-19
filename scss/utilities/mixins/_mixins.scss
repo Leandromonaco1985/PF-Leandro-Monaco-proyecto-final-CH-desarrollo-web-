@@ -1,19 +1,36 @@
+
 @mixin estilo_h1(){
     color: $color-primario-claro;
-    font-size: 3.5em;
+    font-size: 4em;
     font-family: 'Bebas Neue', sans-serif;
-    justify-content: flex-start;
     align-items: center;
     padding: 30px;
 }  
 @mixin estilo_textos{
     color: $color-textos;
     font-family: "Dosis", sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 @mixin estilos_h3{
     color: $color-fuente-main;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2em;
+    font-size: 2.5em;
     padding-left: 30px;
+}
+@mixin boton{
+            padding: 5px 10px;
+            font-size: medium;
+            font-weight: bolder;
+            font-family:"Dosis", sans-serif;
+            border-radius: 50px;
+            background-color: rgb(243, 224, 52);
+            margin: 10px;
+            color: $color-primario-oscuro;
+            cursor: pointer;
+            align-self: center;
+            border-color: $color-primario-claro;
+            & a {
+                color: $color-primario-oscuro;
+                text-decoration: none;
+            }
 }

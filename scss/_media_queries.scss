@@ -9,13 +9,16 @@
     }
     .mainSobreMi{
         text-align: center;
-        .cajaDiv2{
-            height: auto;
-        }
     }
     .mainContacto{
         display: flex;
         flex-direction: column;
+    }
+    .mainElectricista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     }
 /*medias para tablets*/
@@ -25,10 +28,22 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
+        align-self: center;
+        
+        .titulo{
+            align-self:center;
+        }
     }
     .mainContacto{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        .containerTitulo{
+            align-self: auto;
+        }
     }
     .mainSobreMi{
         text-align: center;
@@ -42,6 +57,11 @@
             }
     }
     .mainDesarrollador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainElectricista{
         display: flex;
         flex-direction: column;
         align-items: center;

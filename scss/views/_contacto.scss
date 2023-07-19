@@ -24,15 +24,7 @@
             align-items: center;
             margin-top: 20px;
             .botonForm{
-                padding: 5px 10px;
-                font-size: medium;
-                font-weight: bold;
-                font-family: 'Dosis', sans-serif;
-                border-radius: 50px;
-                background-color: rgb(243, 224, 52);
-                margin: 10px;
-                cursor: pointer;
-                align-self: center;
+                @include boton;
             }      
         }
         
