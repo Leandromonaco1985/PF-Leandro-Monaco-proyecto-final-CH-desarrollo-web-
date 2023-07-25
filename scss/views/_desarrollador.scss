@@ -1,11 +1,11 @@
 .mainDesarrollador{
     display: grid;
     min-height: 100vh;
-    grid-template-columns: 100px 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
     grid-template-areas: 
-    ". titulo titulo titulo"
-    ". card1 card2 card3";
+    "titulo titulo titulo"
+    "card1 card2 card3";
     padding: auto;
     .card{
         position: relative;
@@ -76,6 +76,7 @@
     .card1{
         grid-area: card1;
         margin-top: 6em;
+        align-content: center;
     }
     .card2{
         grid-area: card2;

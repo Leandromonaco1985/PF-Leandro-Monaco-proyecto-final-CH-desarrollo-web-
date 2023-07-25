@@ -12,8 +12,17 @@
         padding: 15px;
         h2{
         padding: 15px;
-        text-decoration: solid;
+        text-decoration: solid;        
+        } 
+        .carousel-inner{
+            .carousel-item{
+                img {
+                    max-height: 500px; 
+                    object-fit: contain;
+                    }
+                }
         }
+        
         .iconosClientesContainer {
             display: flex;
             justify-content: center;

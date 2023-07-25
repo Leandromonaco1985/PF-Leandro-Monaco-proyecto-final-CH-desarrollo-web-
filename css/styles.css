@@ -38,6 +38,7 @@
   background-color: #2596be;
 }
 .header .navbar-expand-lg .container-fluid .navbar-nav .nav-link {
+  font-size: 1.2em;
   color: #2596be;
   align-items: right;
   list-style: none;
@@ -54,13 +55,15 @@ main {
   color: #2596be;
   font-family: "Dosis", sans-serif;
   /*estilos para h1*/
+  /*estilos para textos*/
+  /*estilos h3s*/
 }
 main .titulo_h1 {
   color: #2596be;
-  font-size: 4em;
+  font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
   align-items: center;
-  padding: 30px;
+  padding: 2rem;
 }
 main p {
   color: #f1f1ee;
@@ -129,9 +132,9 @@ main .estilos_h3 {
 .mainDesarrollador {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 100px 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr;
-  grid-template-areas: ". titulo titulo titulo" ". card1 card2 card3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr;
+  grid-template-areas: "titulo titulo titulo" "card1 card2 card3";
   padding: auto;
   /*clases para grid area*/
 }
@@ -201,6 +204,7 @@ main .estilos_h3 {
 .mainDesarrollador .card1 {
   grid-area: card1;
   margin-top: 6em;
+  align-content: center;
 }
 .mainDesarrollador .card2 {
   grid-area: card2;
@@ -216,10 +220,10 @@ main .estilos_h3 {
 .mainMusico {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 1 fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr;
   grid-template-areas: "titulo titulo" "grilla1 grilla1" "grilla3 grilla4" "grilla5 grilla6";
-  gap: 35px;
-  padding: 40px;
+  gap: 4em;
+  padding: 2rem;
 }
 .mainMusico .titulo {
   grid-area: titulo;
@@ -277,6 +281,10 @@ main .estilos_h3 {
 .mainElectricista .sectionElectricista h2 {
   padding: 15px;
   text-decoration: solid;
+}
+.mainElectricista .sectionElectricista .carousel-inner .carousel-item img {
+  max-height: 500px;
+  object-fit: contain;
 }
 .mainElectricista .sectionElectricista .iconosClientesContainer {
   display: flex;
@@ -348,7 +356,7 @@ main .estilos_h3 {
 /*estilo footer*/
 .footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

@@ -1,14 +1,14 @@
 .mainMusico{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  100px 1 fr 1fr 1fr;
+    grid-template-rows:  100px 1fr 1fr 1fr;
     grid-template-areas: 
     "titulo titulo"
     "grilla1 grilla1"
     "grilla3 grilla4"
     "grilla5 grilla6";
-    gap: 35px;
-    padding: 40px;
+    gap: 4em;
+    padding: 2rem;
     // align-items: center;
     // text-align: center;
     .titulo{

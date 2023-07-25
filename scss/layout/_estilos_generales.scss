@@ -8,9 +8,11 @@ main{
     .titulo_h1{
         @include estilo_h1;
     }
+    /*estilos para textos*/
     p{
         @include estilo_textos;
     }
+    /*estilos h3s*/
     .estilos_h3{
         @include estilos_h3;
     }
