@@ -1,6 +1,22 @@
 /*medias para moviles*/
 @media (max-width: 577px){
-    
+    .header{
+            .navbar{
+                padding: 20px;
+            }
+            .navbar-expand-lg{
+                .container-fluid{
+                    padding: 10px;
+                    .logo{
+                        width: 100px;
+                        img{
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        
+    }
     main {
     display: flex;
     flex-direction: column;
@@ -13,12 +29,18 @@
     .mainContacto{
         display: flex;
         flex-direction: column;
+        .containerMap{
+            display: none;
+        }
     }
     .mainElectricista{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .footer{
+        padding: 15px;
     }
     }
 /*medias para tablets*/
@@ -54,12 +76,17 @@
     .header{
         .navbar-nav{
             justify-content: flex-start;
+            padding: 15px;
             }
     }
     .mainDesarrollador{
         display: flex;
         flex-direction: column;
         align-items: center;
+        .card{
+            width: 300px;
+            height: 400px;
+        }
     }
     .mainElectricista{
         display: flex;
@@ -73,7 +100,7 @@
         "cajaTextos"
         "cajaImg";
         gap: 1rem;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         justify-content: center;
         max-width: 100%;

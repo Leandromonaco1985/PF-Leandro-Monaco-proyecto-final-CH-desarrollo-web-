@@ -1,7 +1,11 @@
 main{
     /* Estilos generales para main */
-    background: linear-gradient($color-primario-oscuro, $color-primario-claro);
-    color: $color-primario-claro;
+   background: linear-gradient(
+    map-get($paleta_colores, color-primario-oscuro),
+    map-get($paleta_colores, color-primario-claro)
+   );
+    color:  map-get($paleta_colores , color-primario-claro )
+    ;
     font-family: 'Dosis', sans-serif;
     
     /*estilos para h1*/

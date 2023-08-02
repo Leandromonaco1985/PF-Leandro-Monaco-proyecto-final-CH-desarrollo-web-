@@ -7,12 +7,12 @@
     "cajaImg cajaTextos"
     "cajaImg cajaTextos";
     height: 100vh;
-    gap: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-left: 10em;
-    padding-right: 10em;  
+    padding: $padding; 
+    
+    
     .h1_index {
         font-size: 6em;
         justify-content:flex-start;
@@ -37,7 +37,6 @@
     #img_index{
         max-width: 100%;
         object-fit: contain;
-        /* height: 10px; */
     }
     .cajaTextos{
         grid-area: cajaTextos;

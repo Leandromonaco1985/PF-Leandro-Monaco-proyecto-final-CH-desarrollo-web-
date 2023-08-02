@@ -1,11 +1,12 @@
 .header{
-    /*estilos personalizados header*/
     .navbar-expand-lg{
+        padding: $padding;
         font-family: 'Dosis', sans-serif;
-        background-color: $color-primario-oscuro;
+        background-color: map-get($paleta_colores, color-primario-oscuro );
         justify-content: flex-end;
         align-items: center;
-        .container-fluid{
+        padding: 20px 65px 20px 65px;
+     
             .logo{
                 width: 150px;
                 img {
@@ -20,17 +21,17 @@
                 }
             }
             .btn-botonPersonalizado{
-                color: $color-primario-claro;
-                background-color: $color-primario-claro;
+                color: map-get($paleta_colores , color-primario-claro );
+                background-color: map-get($paleta_colores , color-primario-claro );
             }
             .navbar-nav {
                 .nav-link {
                     font-size: 1.2em;
-                    color: $color-primario-claro;
+                    color: map-get($paleta_colores , color-primario-claro );
                     align-items: right;
                     list-style: none;
                     &:hover {
-                        color: $color-hover-nav;
+                        color: map-get($paleta_colores, color-hover-nav);
                         transform: scale(1);
                     }     
                 }

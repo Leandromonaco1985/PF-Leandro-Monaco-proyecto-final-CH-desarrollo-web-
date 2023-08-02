@@ -1,3 +1,46 @@
 .mainSobreMi{
-    padding: 35px;
+    display: flex;
+    padding: $padding;
+    flex-direction: column;
+    .cajaDiv2{
+        display: flex;
+        margin: 30px 0px 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        grid-area: texto;
+        .boton{
+            @include boton;
+            width: 35vw;
+        }
+    }
+    .cajaH1{
+        grid-area: h1;
+    }
+    /*estilos acordeon*/
+    section{
+        padding-top: 35px;
+        align-items: center;
+        margin: 30px 0px 30px;
+        .accordion-item{
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.5rem;
+            background-color: map-get($paleta-colores , color-fuente-main );
+            color: map-get($paleta-colores, color-primario-oscuro );
+        }
+        .accordion-button {
+            @extend .accordion-item;
+            background-color: map-get($paleta-colores ,color-primario-oscuro );
+            color: map-get($paleta-colores , color-primario-claro);
+        }
+        .containerBoton{
+            display: flex;
+            padding-top: 35px;
+            justify-content: center;
+                .boton{
+                @include boton;
+                width: 50vw;
+            }
+        }
+    } 
 }

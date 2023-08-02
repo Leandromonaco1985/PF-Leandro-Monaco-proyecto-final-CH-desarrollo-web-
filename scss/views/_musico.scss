@@ -7,66 +7,42 @@
     "grilla1 grilla1"
     "grilla3 grilla4"
     "grilla5 grilla6";
-    gap: 4em;
-    padding: 2rem;
-    // align-items: center;
-    // text-align: center;
+    padding: $padding;
+    
     .titulo{
         grid-area: titulo;
         align-items: flex-start;
         justify-content: flex-start;
     }
     .grilla1{
+        display: flex;
+        flex-direction: column;
         grid-area: grilla1;
         align-items: center;
-        justify-content: center;
-        padding-top: 30px;
+        .estilos_h3{
+            align-self: start;
+        }
     }
     .grilla2{
         grid-area: grilla2;
-        align-items: center;
-        justify-content: center;
-        padding-top: 30px;
+        padding-top: 10px;
     }
     .grilla3{
         grid-area: grilla3;
-        align-items: center;
-        justify-content: center;
     }
     .grilla4{
         grid-area: grilla4;
+        display: flex; 
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
     }
     .grilla5{
         grid-area: grilla5;
-        align-items: center;
-        justify-content: center;
     }
     .grilla6{
         grid-area: grilla6;
+        display: flex; 
         align-items: center;
-        justify-content: center;
+        justify-content: center; 
     }
-    
-  }
-
-//     /*condicional para ajustar tamaño de iframes según dispositivo*/
-//     $iframe-width: 300px; // Tamaño predeterminado del iframe
-
-// @function calculateIframeWidth($width) {
-//   @if $width < 768px {
-//     @return 350px;
-//   } @else if $width < 1024px {
-//     @return 700px;
-//   } @else if $width < 1440px {
-//     @return 800px;
-//   } @else {
-//     @return 1000px;
-//   }
-// }
-
-// 
-// }
-
-// }
+}

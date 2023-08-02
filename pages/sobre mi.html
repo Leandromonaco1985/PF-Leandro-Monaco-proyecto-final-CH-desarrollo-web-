@@ -23,13 +23,10 @@
 <body>        
 <!--encabezado - navbar de boostrap-->
     <header id= "headerSobreMi" class="header">
-        <nav class="navbar navbar-expand-lg" style="font-family: 'Dosis', sans-serif; background-color: #13131d;
-                    color: #2596be;
-                    justify-content: flex-end;
-                    align-items: center;">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="logo">
-                    <a href="../index.htm" > <img src="../img/logo200.webp" alt="logo leandro monaco" ></a>
+                    <a href="../index.htm" > <img src="../img/logo2comp.webp" alt="logo leandro monaco" ></a>
                 </div>
                 <button class="navbar-toggler btn-botonPersonalizado" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #2596be;">
                     <span class="navbar-toggler-icon"></span>
@@ -58,15 +55,119 @@
     </header>
     <!--contenido principal-->
     <main class="mainSobreMi">
-        <div class="cajaH1">
+        <div class="cajaH1"> <!--container titulo-->
             <h1 class="titulo_h1">Sobre mi</h1>
         </div>
-        <div class="cajaDiv2">
+        <div class="cajaDiv2"> <!--texto-->
             <p> 
                 Nacido el 12 de febrero de 1985 en la ciudad de Mar del Plata, Buenos Aires, Argentina, siempre me caractericé por mi curiosidad y creatividad. Este espíritu inquieto  me llevó en un principio a estudiar sociología y música al mismo tiempo, para terminar decantándome por esta última disciplina. En el ámbito laboral, trabajé muchos años en venta y atención al cliente, destacando gracias a mis habilidades interpersonales. Pero estos trabajos no me daban la flexibilidad horaria que necesitaba para organizar mis horarios de ensayos y cursada, por lo que decidí formarme como electricista. Encontré en este oficio el placer de reparar y construir instalaciones, satisfaciendo necesidades muy concretas de mis clientes, y enfrentándome diariamente a problemas distintos en locaciones diferentes, que ponían a prueba mis capacidades. Actualmente me encuentro formándome como programador, campo en el que vislumbro una infinidad de posibilidades para construir soluciones a problemas y un desafío apasionante.
             </p>
         </div>    
+        <section> <!--acordeon curriculum desplegable-->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Experiencia Laboral
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong> 
+                            <ul>
+                                <li> 2014 – Actualidad: Instalador Electricista independiente
+                                    Trabajo independiente para clientes domiciliarios, comerciales y consorcios.
+                                    Elaboración de Cómputos y Presupuesto detallados para obras de media envergadura.
+                                </li>
+                                <li> 
+                                    Diciembre 2021 – Marzo 2022: EDENOR
+                                    Cargo: Oficial electricista
+                                    Función: Oficial electricista en reforma y mantenimiento de subestaciones de EDENOR. Control de estoque y materiales
+                                </li>
+                                <li>
+                                    2012 – 2014:  GyG Servicios Electricos
+                                    Cargo: ½ Oficial electricista
+                                    Función: Ayudante electricista en mantenimiento de locales, domicilios particulares y obras. Visitas Técnicas, emergencias y confeccionado de presupuestos. Referencia: https://gygserviciosymantenimiento.com/ 
+                                </li>
+                                <li>
+                                    2011 – 2012  Indicom S.A.
+                                    Cargo: Operador Telefónico.
+                                    Función: Soporte técnico telefónico a clientes de Telecentro S.A., para los servicios de cable, Internet y telefonía. Ayudando al abonado con las configuraciones básicas de red y windows. Gestión y canalización de reclamos. Team Lider suplente.
+                                </li>
+                                <li>
+                                    2007-2009	Telecentro Junín:
+                                    Cargo: Atención al público/cajero
+                                    Función: Atención al cliente, envío de fax, fotocopias, venta de pasajes, ayuda al cliente con las computadoras, encargado de caja. Junín 1089 TE: 48240203
+                                </li>
+                                <li>
+                                    2006-2007	ILHSA GROUP (Librerías Yenny/El ateneo) 
+                                    Cargo:	Vendedor 
+                                    Función: Atención al cliente (librería Yenny, sucursal Patio Bullrich Av. Libertador 740. Tel 4815-1610), vendiendo principalmente discos y DVDs. Control de stock. Encargado del sector de películas y de pedidos de música desde febrero 2007.
+                                </li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Estudios
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>
+                            <ul>
+                                <li> 2023: Desarrolador de Aplicaciones en Coder House</li>
+                                <li> Terciario 3 año del ciclo superior de la carrera de instrumentista en Escuela de Música Popular de Avellaneda</li>
+                                <li> Universitario:	Licenciatura en Sociología, Universidad de Buenos Aires, 9 Materias aprobadas (2003 – 2006),</li>
+                                <li> Secundario Completos – Escuela Cangallo Schulle </li>
+                                <li> Curso : Instalador Electricista en Fundación UOCRA (Año 2012)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Softwere y Tecnologias dominadas
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <strong>
+                            <ul>
+                                <li> Html5, css, JS (básico) y C++  (básico)</li>
+                                <li> Entorno Windows (ntermedio)</li>
+                                <li> Ubuntu (básico)</li>
+                                <li> Suite Microsoft Office  </li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Idiomas
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>
+                                <ul>
+                                    <li> Ingles (nivel intermedio)</li>
+                                    <li> Portugues (nivel básico)</li>
+                                    <li> Francés (básico)</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerBoton"> <!--boton de descarga-->
+                    <button class="boton"> Descarga Mi Cv Completo </button>
+                </div>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="copy">
             <h7> Desarrollado por Leandro Mónaco 2023</h7>  
