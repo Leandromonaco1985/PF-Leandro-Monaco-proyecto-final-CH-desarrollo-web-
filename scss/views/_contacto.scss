@@ -41,10 +41,10 @@
     }
 
     .contendorButton{
-       display: flex;
-       align-items: center;
-       margin-top: 20px;
-       .botonForm{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .botonForm{
             @include boton;
             width: 35vw;
         }      
